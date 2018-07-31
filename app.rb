@@ -8,7 +8,7 @@ class App < Sinatra::Base
 post "/food" do 
   @name = params[:username]
   @food = params[:food]
-  
+  erb :food
 end 
 
 
